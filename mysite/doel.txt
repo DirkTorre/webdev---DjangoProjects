@@ -1,0 +1,17 @@
+opzetten via:
+https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html 
+
+nu: static ip uitvogelen
+
+
+# static en media files werkend (css)
+# twee apps maken
+# postgres database maken (done)
+# interactieve pagina met AJAX
+# asynchronous task proces doen met celery (djano-celery) of django-q (django-q is misschien beter??)
+    https://docs.celeryproject.org/en/stable/django/first-steps-with-django.html
+    -idee: 
+        een start, pauze en stop knop, voor een taak.
+        de taak is een aantal seconden wachten, waarbij een teller word bijgehouden.
+        voortgang (teller) dan live laten update op scherm.
+# docker

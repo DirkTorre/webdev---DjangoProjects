@@ -6,7 +6,8 @@
     1. register app in INSTALLED_APPS (settings.py of the project app)
     2. create a view for app
     3. create urls.py for the app
-    4. register app urls.py in project urls.py
+    4. register app_name in app urls.py
+    5. register app urls.py in project urls.py
 
 optional
 

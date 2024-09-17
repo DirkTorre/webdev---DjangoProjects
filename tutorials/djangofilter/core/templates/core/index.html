@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% comment %} 5:22 - https://www.youtube.com/watch?v=FTUxl5ZCMb8 {% endcomment %}
+
+{% block content %}
+<form method='GET' url="{% url 'core:index' %}">
+    {{ form.as_p }}
+    <input type="submit" value="Submit" class="btn btn-primary" />
+</form>
+
+<hr/>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Price</th>
+    </thead>
+    <tbody>
+        {% for book in model %}
+        <tr>
+            <td>{{ book.name }}</td>
+            <td>{{ book.author.name }}</td>
+            <td>{{ book.get_genre_display }}</td>
+            <td>{{ book.price }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

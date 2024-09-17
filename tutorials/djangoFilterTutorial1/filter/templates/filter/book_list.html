@@ -1,0 +1,10 @@
+<form method="get">
+    {{ filter.form.as_p }}
+    <input type="submit" value="Filter">
+</form>
+
+<ul>
+    {% for book in filter.qs %}
+        <li>{{ book.title }} by {{ book.author }}</li>
+    {% endfor %}
+</ul>

@@ -8,6 +8,7 @@ class Book(models.Model):
         NON_FICTION = "N"
         OTHER = "O"
         SCI_FI = "S"
+        MEMOIR = "M"
 
     name = models.CharField(max_length=128)
     price = models.FloatField()
